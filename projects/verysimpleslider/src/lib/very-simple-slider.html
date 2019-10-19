@@ -1,0 +1,9 @@
+<ng-container *ngIf="!items.length">
+    There is no Slides to display
+</ng-container>
+
+<ng-container *ngIf="items.length > 0">
+    <div *ngFor="let item of items;let i = index">
+        Slide {{i+1}}
+    </div>
+</ng-container>
