@@ -41,11 +41,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Very Simple Slider Demo Page';
-    slides = [
-    {id:0,name:"Slide1"},
-    {id:1,name:"Slide2"},
-    {id:2,name:"Slide3"}
-    ]
+  items = [
+    {id:1,title:"SLIDE1 TITLE",subtitle:"Slide 1 subtitle here",image:"https://raw.githubusercontent.com/rabiee3/verysimpleslider/master/src/assets/images/1.jpg"},
+    {id:2,title:"SLIDE2 TITLE",subtitle:"Slide 2 subtitle here",image:"https://raw.githubusercontent.com/rabiee3/verysimpleslider/master/src/assets/images/2.jpg"},
+    {id:3,title:"SLIDE3 TITLE",subtitle:"Slide 3 subtitle here",image:"https://raw.githubusercontent.com/rabiee3/verysimpleslider/master/src/assets/images/3.jpg"}
+  ];
 
 }
 ```
