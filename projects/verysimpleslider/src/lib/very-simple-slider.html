@@ -3,7 +3,25 @@
 </ng-container>
 
 <ng-container *ngIf="items.length > 0">
-    <div *ngFor="let item of items;let i = index">
-        Slide {{i+1}}
+    <div class="verysimpleslider">
+        <div class="slide animated" [ngClass]="[(i+1)==currentSlide ? slideAnimName : slideAnimOppName]" *ngFor="let slideItem of items; let i=index;">
+            <div class="slidebg" [ngStyle]="{'background-image': 'url(' + slideItem.image + ')'}">
+                <div class="layerBG float-left delay-1s" [ngClass]="[(i+1)==currentSlide ? 'animated fadeInUp' : 'animated slow fadeOutDown']">
+                    <h2 class="hala mt-4 font-italic lh-1 fz-78 mb-0">
+                        {{slideItem.title}}
+                    </h2>
+                    <div class="fz-24">{{slideItem.subtitle}}</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="next" (click)="next()">🡆</div>
+            <div class="prev" (click)="prev()">🡄</div>
+        </div>
+
+        <div class="indicators">
+            <div class="bullet" *ngFor="let bullet of items; let x=index;" [ngClass]="{'active':(x+1)==currentSlide}"></div>
+        </div>
     </div>
 </ng-container>

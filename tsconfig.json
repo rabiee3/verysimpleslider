@@ -19,18 +19,6 @@
       "dom"
     ],
     "paths": {
-      "simple-slider": [
-        "dist/simple-slider"
-      ],
-      "simple-slider/*": [
-        "dist/simple-slider/*"
-      ],
-      "rabiee3-slider": [
-        "dist/rabiee3-slider"
-      ],
-      "rabiee3-slider/*": [
-        "dist/rabiee3-slider/*"
-      ],
       "verysimpleslider": [
         "dist/verysimpleslider"
       ],

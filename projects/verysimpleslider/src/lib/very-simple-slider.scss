@@ -1,0 +1,61 @@
+:host{
+    overflow: hidden;
+    position: relative;
+}
+.verysimpleslider{
+    min-height: 350px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    .slidebg,.slide{
+        width: 100%;
+        height: 100%;
+        position:absolute;
+    }
+    .slidebg{
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .layerBG{
+        display: inline-block;
+        padding: 10px;
+        background: rgba(255,255,255,0.5);
+        h2{
+            margin:0;
+        }
+    }
+    .controls{
+        .next,.prev{
+            position: absolute;
+            top:45%;
+            cursor: pointer;
+            background: rgba(255,255,255,0.5);
+            padding: 6px;
+            &:hover{
+                background:white;
+            }
+        }
+        .prev{left:15px;}
+        .next{right:15px;}
+    }
+
+    .indicators{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        .bullet{
+            display: inline-block;
+            width:10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            margin:5px;
+            &.active{
+                background:white;
+            }
+        }
+    }
+}
+
+

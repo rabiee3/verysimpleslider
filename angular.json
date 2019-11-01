@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "testproject:build"
+            "browserTarget": "VerySimpleSliderDemoProject:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "testproject:build:production"
+              "browserTarget": "VerySimpleSliderDemoProject:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "testproject:build"
+            "browserTarget": "VerySimpleSliderDemoProject:build"
           }
         },
         "test": {
@@ -171,5 +171,5 @@
       }
     }
   },
-  "defaultProject": "VerySimpleSliderDemoProject"
+  "defaultProject": "verysimpleslider"
 }
